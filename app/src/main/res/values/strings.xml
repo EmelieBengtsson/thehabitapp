@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">HabitAppen</string>
     <string name="book_title">Title</string>
+    <string name="submit_book">Submit</string>
 </resources>

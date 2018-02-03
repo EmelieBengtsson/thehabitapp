@@ -12,8 +12,24 @@
         tools:layout_editor_absoluteY="269dp">
 
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtInBookTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/book_title" />
+
+        <Button
+            android:id="@+id/btnSubmitBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/submit_book" />
     </android.support.design.widget.TextInputLayout>
+
+    <NumberPicker
+        android:id="@+id/npBookScore"
+        android:layout_width="62dp"
+        android:layout_height="129dp"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="80dp"
+        />
 </android.support.constraint.ConstraintLayout>
