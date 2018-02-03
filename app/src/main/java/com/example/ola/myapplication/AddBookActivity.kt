@@ -1,12 +1,13 @@
 package com.example.ola.myapplication
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.TextInputEditText
+import android.support.v7.app.AppCompatActivity
 import android.widget.NumberPicker
 
 class AddBookActivity : AppCompatActivity() {
-   var numberPicker: NumberPicker? = null
+    private lateinit var numberPicker: NumberPicker
+    private lateinit var textInputEditText: TextInputEditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,11 +17,11 @@ class AddBookActivity : AppCompatActivity() {
     }
 
     private fun setupTextInput() {
-        val textInputEditText = findViewById<TextInputEditText>(R.id.txtInBookTitle)
+        textInputEditText = findViewById<TextInputEditText>(R.id.txtInBookTitle) as TextInputEditText
 
     }
 
-    private fun setupNumberPicker (){
+    private fun setupNumberPicker() {
         numberPicker = findViewById<NumberPicker>(R.id.npBookScore) as NumberPicker
         numberPicker.minValue = 1
         numberPicker.maxValue = 4
