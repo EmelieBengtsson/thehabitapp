@@ -16,6 +16,7 @@
             android:id="@+id/txtInBookTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="30sp"
             android:hint="@string/book_title" />
 
     </android.support.design.widget.TextInputLayout>
@@ -24,18 +25,22 @@
         android:id="@+id/btnSubmitBook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_marginEnd="83dp"
-        android:layout_toStartOf="@+id/npBookScore"
+        android:layout_alignBottom="@+id/npBookScore"
+        android:layout_alignEnd="@+id/textInputLayout"
+        android:layout_marginBottom="47dp"
+        android:layout_marginEnd="12dp"
         android:layout_weight="1"
-        android:text="@string/submit_book" />
+        android:text="@string/submit_book"
+        android:textSize="20sp" />
+
     <NumberPicker
         android:id="@+id/npBookScore"
-        android:layout_width="62dp"
-        android:layout_height="129dp"
-        android:layout_alignEnd="@+id/textInputLayout"
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/textInputLayout"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="29dp"
         tools:layout_editor_absoluteX="267dp"
         tools:layout_editor_absoluteY="80dp" />
 </RelativeLayout>

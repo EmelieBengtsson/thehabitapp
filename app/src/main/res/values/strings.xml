@@ -2,4 +2,6 @@
     <string name="app_name">HabitAppen</string>
     <string name="book_title">Title</string>
     <string name="submit_book">Submit</string>
+    <string name="add_book">Add new book</string>
+    <string name="finished_books">Finished books</string>
 </resources>
